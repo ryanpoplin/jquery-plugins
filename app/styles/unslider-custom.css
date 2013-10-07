@@ -1,0 +1,43 @@
+.unslider { 
+    background-color: #f0f0f0;
+    position: relative; 
+    border-radius: 4px;
+    overflow: auto; 
+    max-width: 100%;
+}
+
+.unslider li { 
+    list-style: none; 
+}
+
+.unslider ul li { 
+    float: left; 
+}
+
+.unslider-heading {
+    padding: 50px 0 30px 50px;
+    font-size: 3em;
+}
+
+.unslider-paragraph {
+    padding: 0 0 50px 50px;
+    font-size: 1.5em;
+}
+
+a {
+    padding: 0 30px 0 30px;
+    color: #0099ff;
+    font-weight: bolder;
+    font-size: 4em;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color:#0066ff;
+}
+
+.unslider-navigation {
+    margin-bottom: 15px;    
+    text-align: center;
+}
