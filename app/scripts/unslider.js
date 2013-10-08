@@ -193,3 +193,32 @@
 		});
 	};
 })(window.jQuery, false);
+
+$(function(){
+	
+	$('.unslider').unslider({
+		speed: 500,
+		delay: 3000
+	});
+	
+	var unslider = $('.unslider').unslider();
+    
+    $('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        unslider.data('unslider')[fn]();
+    });
+    
+    // jQuery.event.swipe plugin by: Steph Band...
+    // How to add???
+    /*var slides = jQuery('.slides'),
+    i = 0;
+	slides
+	.on('swipeleft', function(e) {
+  	slides.eq(i + 1).addClass('active');
+	})
+	.on('swiperight', function(e) {
+  		slides.eq(i - 1).addClass('active');
+	});*/
+
+});
